@@ -3,52 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Rizwan - Interactive Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="">
-
-    <div>
-<div class="font-bold uppercase flex items-center justify-center mt-4 mb-6  text-4xl">Static Interactive Resume</div>
-
-
-        <div class='w-[100%] h-[100%] uppercase flex items-center mt-6 mb-6 mx-8 text-[30px] '>
-           <div  class='text-[30px] font-bold'> My Name Is<br/> Rizwan Arain
-           I Am Belong <br/>District Mirpurkhas<br/>
-           city Tando Jan Muhammad</div>
-           <div class="flex justify-end">
-        <image class="h-48 w-48 rounded-full" src="Images/IMG-20240906-WA0012.jpg" alt="profile">
-        </div>
-        </div>
-        <div>
-            <div class='justify-center text-[25px] mt-6 flex items-center font-bold bg-black w-full h-10 text-white uppercase'>
-                My Education<br/>
+<body>
+    <div class="container">
+        <header>
+            <img src="./image/kkk.jpg" alt="Waheed" class="profile-picture">
+            <h1>Rizwan Arain</h1>
+            <p>Front-End Developer</p>
+        </header>
+        
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: rarain904@gmail.com</p>
+            <p>Location: Mirpurkhas, Pakistan</p>
+        </section>
+        
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p>Passionate front-end developer skilled in HTML, CSS, JavaScript, and TypeScript, with experience in creating responsive web applications and engaging user interfaces. Currently mastering React, Next.js, and Tailwind CSS to advance full-stack development capabilities.</p>
+        </section>
+        
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>Front-End Developer - Personal Projects</h3>
+                <p class="date">Ongoing</p>
+                <ul>
+                    <li>Currently building a portfolio and e-commerce landing pages using Next.js and Tailwind CSS</li>
+                    <li>Utilized GitHub for project management and version control</li>
+                </ul>
             </div>
-            <div class=' mt-6 mx-4 text-[25px] font-bold uppercase '>
-        Intermediate <br/>Goverment Degree Collage<br/> Tando Jan Muhammad District Mirpurkhas
+            <div class="job">
+                <h3>Freelance Front-End Developer</h3>
+                <p class="date">2024 - Present</p>
+                <ul>
+                    <li>Collaborated with designers to create visually appealing and accessible websites</li>
+                    <li>Optimized performance for fast load times and responsive design</li>
+                    <li>Utilized GitHub for project management and version control</li>
+                </ul>
             </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Diploma of Associate Engineer in Computer Information Technology</h3>
+                <p>Boys Degree Collage Mirpurkhas (Sindh), 2020</p>
             </div>
-            <div>
-                <div class='text-center justify-center flex items-center mt-6 text-[25px] font-bold bg-black text-white w-full h-10 uppercase'>Work Experience</div>
-                <div class='text-[25px] font-bold w-full h-auto uppercase'>I am student of GIAIC<br/> (Feb-2024 Aug-2024)</div>
-            </div>
-            <div>
-                <div class='mt-6 text-[25px] uppercase  flex text-center justify-center font-bold bg-black text-white w-full h-10'>
-                    My Skills
-                </div>
-                <div class='font-bold'>HTML</div>
-                <div class='w-[100%] h-4 bg-red-600 rounded-md'></div>
-                    <div class='justify-end flex items-center font-bold'>100%</div>
-            <div class='font-bold'>Tailwind Css</div>
-            <div class='w-[80%] h-4 bg-blue-500 rounded-md'></div>
-                <div class='mx-64 justify-end flex items-center font-bold '>80%</div>
-                <div class='font-bold'>Typescript</div>
-            <div class='w-[85%] h-4 bg-yellow-600 rounded-md'></div>
-            <div class='mx-48 justify-end flex items-center font-bold'>85%</div>
-            <div class='font-bold'>Next.Js</div>
-            <div class='w-[50%] h-4 bg-pink-700 rounded-md'></div>
-            <div class=' justify-center flex items-center font-bold'>50%</div>
-                </div>
-            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <button id="toggle-skills">Toggle Skills</button>
+            <ul id="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>Git</li>
+                <li>Responsive Web Design</li>
+                <li>Tailwind CSS</li>
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
